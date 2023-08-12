@@ -18,6 +18,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
     "@tetty0217/prettier-config-playground": "^0.0.2",
     "@types/jest": "^29.5.3",
     "@types/node": "20.4.10",
@@ -27,9 +29,11 @@
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.13",
     "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
     "postcss": "8.4.27",
     "prettier": "^3.0.1",
     "tailwindcss": "3.3.3",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }
 }
