@@ -1,6 +1,5 @@
 import { forEach, sum } from "~/util/sample";
-
-const mockCallback = jest.fn((x) => 42 + x);
+import { getUserName } from "~/util/sample/user";
 
 describe("index.ts", () => {
   describe("sum()", () => {
@@ -9,6 +8,7 @@ describe("index.ts", () => {
     });
   });
   describe("forEach", () => {
+    const mockCallback = jest.fn((x) => 42 + x);
     describe("[0,1] を引数に渡したとき", () => {
       test("1つ目の結果は 42 となる", () => {
         forEach([0, 1], mockCallback);

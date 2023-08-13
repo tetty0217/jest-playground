@@ -11,7 +11,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["src/**/*.spec.ts"],
+      files: ["src/**/__tests__/*.test.ts"],
       extends: ["plugin:jest/recommended"],
       rules: {
         "jest/consistent-test-it": ["error", { fn: "test" }],
